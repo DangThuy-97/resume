@@ -233,7 +233,7 @@ HAVING Count(*)>1
 
 **Successful!**
 
-**CTE Technique conducted on table [tble2].** 
+**CTE Technique conducted on table [tble2]:** <br>
 First we use: row_number() OVER (Partition by [combination of attributes] ORDER by [attribute]). <br>
 Basically, this function does the same thing as the Groupby & Having above. It returns the column representing the number of times the [combination of attributes] of that row has occured.<br>
 <br>
