@@ -5,7 +5,7 @@ A SQL data cleaning project
 A small SQL Data cleaning project 
 Inspired and guided by [one of Alex's projects](https://github.com/AlexTheAnalyst/PortfolioProjects)
 
-[Alex the Analyst](https://www.youtube.com/watch?v=8rO7ztF4NtU&t=677s)
+Walkthrough queries by [Alex the Analyst](https://www.youtube.com/watch?v=8rO7ztF4NtU&t=677s)
 
 [Data Cleaning Walk-Through]
 
