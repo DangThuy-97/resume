@@ -1,8 +1,17 @@
 # An SQL Data Cleaning Project
 ## by nguyendangthuy97@gmail.com
 
-For this project, I follow the guidance of Alex The Analyst to complete the cleaning process.
-I take the liberty to change the table name to 'tble' for simplicity.
+For this project, I follow the guidance of Alex The Analyst to complete the cleaning process.<br>
+
+Goals of this project:
+- Change date format
+- Populate some null values in address column
+- Separate full address to individual columns (Address, City, State)
+- Standardize SoldAsVacant column
+- Remove duplicates rows using 2 techniques: Groupby & Having Clauses; row_number()
+- Remove unused columns <br>
+
+I take the liberty to change the table name to 'tble' for simplicity and ease of use.
 
 Let's take a look at the table to examine the data in its original form.
 ```sql
@@ -12,7 +21,9 @@ select * from [tble]
 ![image](https://github.com/shandarren/resume/assets/132535188/ae0a5040-d7de-4e04-87b0-4584bd10bd4c)
 ![image](https://github.com/shandarren/resume/assets/132535188/9fd8bb0e-baf4-4dc1-b359-c6ac4e1e35f5)
 
-It seems like the date column has already been in the right format. We move on to check the null values in the PropertyAddress column
+It seems like the date column has already been in the right format.<br>
+## Populate some null values in address column
+We move on to check the null values in the PropertyAddress column
 ```sql
 Select PropertyAddress from [tble]
 where PropertyAddress is null;
