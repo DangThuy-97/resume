@@ -233,3 +233,36 @@ select * from clubinfo
 exec sp_rename 'clubinfo','cleaned_clubinfo'
 
 select * from cleaned_clubinfo
+-------------------------
+
+------------------------membership_date
+SELECT * into info4 from cleaned_clubinfo
+where isdate(trim(membership_date)) = 0
+
+select * from info4
+
+update info4
+set membership_date = CONCAT(
+        PARSENAME(replace(membership_date,'-','.'),1),'-',
+        PARSENAME(replace(membership_date,'-','.'),2),'-',
+        PARSENAME(replace(membership_date,'-','.'),3)
+)
+
+update info4
+set membership_date = replace(membership_date,'/','-')
+
+select * from info4
+where isdate(membership_date) = 1
+
+update cleaned_clubinfo
+set cleaned_clubinfo.membership_date = info4.membership_date
+from cleaned_clubinfo
+join info4
+on cleaned_clubinfo.id = info4.id
+
+select * from cleaned_clubinfo
+where isdate(membership_date) = 1
+
+update cleaned_clubinfo
+set membership_date = cast(membership_date as Date)
+------------------------------------
