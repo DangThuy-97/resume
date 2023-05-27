@@ -148,17 +148,7 @@ where trim(job_title) =''
 select job_title from clubinfo
 
 ALTER TABLE clubinfo
-add job_title2 nvarchar(255)
-
-update clubinfo
-set job_title =
-    CASE    WHEN PARSENAME(REPLACE(job_title,' ','.'),1) = 'I' THEN replace(job_title,'I','Level 1')
-            WHEN PARSENAME(REPLACE(job_title,' ','.'),1) = 'II' THEN replace(job_title,'II','Level 2')
-            WHEN PARSENAME(REPLACE(job_title,' ','.'),1) = 'III' THEN replace(job_title,'III','Level 3')
-            WHEN PARSENAME(REPLACE(job_title,' ','.'),1) = 'IV' THEN replace(job_title,'IV','Level 4')
-    ELSE job_title
-    END;
-    
+add job_title2 nvarchar(255)  
 
 Alter TABLE clubinfo
 add job_level NVARCHAR(255)
