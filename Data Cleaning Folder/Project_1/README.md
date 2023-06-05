@@ -8,6 +8,7 @@ Inspired and guided by [one of Alex's projects](https://github.com/AlexTheAnalys
 Walkthrough queries by [Alex the Analyst](https://www.youtube.com/watch?v=8rO7ztF4NtU&t=677s)
 
 [Data Cleaning Walk-Through Using SQL](https://github.com/shandarren/resume/blob/main/Data%20Cleaning%20Folder/Project_1/DATA_CLEANING.md)
+
 [Data Cleaning using Python](https://github.com/shandarren/resume/blob/main/Data%20Cleaning%20Folder/Project_1/DataCleaningProject%201.ipynb)
 
 
