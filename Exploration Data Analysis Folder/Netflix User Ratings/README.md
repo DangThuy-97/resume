@@ -15,3 +15,6 @@ This dataset contains two csv files named '[movies.csv](https://github.com/AlexT
 and '[Netflix_User_Ratings.csv](https://www.kaggle.com/datasets/evanschreiner/netflix-movie-ratings)'.
 
 Both of which can be downloaded on [kaggle](https://www.kaggle.com/datasets/evanschreiner/netflix-movie-ratings).
+
+## Dashboard for Visualization
+A basic dashboard is built using PowerBI. [Check it out!](https://github.com/shandarren/resume/blob/main/Data%20Visualization%20Folder/Netflix%20User%20Rating/README.md)
