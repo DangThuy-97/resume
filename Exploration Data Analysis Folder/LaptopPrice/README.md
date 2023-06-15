@@ -14,4 +14,4 @@ and '[laptops_test](https://github.com/shandarren/resume/blob/main/Exploration%2
 Both of which can be downloaded on [kaggle](https://www.kaggle.com/datasets/arnabchaki/laptop-price-prediction).
 
 ## Dashboard for Visualization
-A basic dashboard is built using PowerBI. [Check it out!]()
+A basic dashboard is built using Tableau. [Check it out!](https://public.tableau.com/app/profile/dangthuy97/viz/LaptopPriceEDA/Laptopinspection)
